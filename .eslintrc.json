@@ -1,0 +1,40 @@
+{
+  "env": {
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": "standard",
+  "plugins": [
+    "standard",
+    "promise",
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "no-unneeded-ternary": "off",
+    "no-use-before-define": "off",
+    "multiline-ternary": "off",
+    "import/no-useless-path-segments": [ "error", {
+      "noUselessIndex": true
+    }]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "no-unused-vars": ["off"],
+        "no-undef": ["off"]
+      }
+    }
+  ],
+  "globals": {
+    "GRAPHQL_ENDPOINT": false,
+    "FileReader": false
+  }
+}

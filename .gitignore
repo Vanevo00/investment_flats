@@ -1,0 +1,7 @@
+config
+.idea
+node_modules
+scraper/node_modules
+server/node_modules
+client/node_modules
+client/.next
